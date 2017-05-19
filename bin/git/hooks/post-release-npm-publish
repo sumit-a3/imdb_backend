@@ -1,0 +1,8 @@
+#!/bin/sh
+#
+# This is called after `git release`
+
+if [ -e 'package.json' ]
+then
+  npm publish
+fi
